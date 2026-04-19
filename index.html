@@ -8,15 +8,32 @@
       color: #d4a84a;
       font-family: Orbitron, sans-serif;
       text-align: center;
-      margin-top: 60px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+    }
+
+    .content {
+      padding-bottom: 100px; /* prevents footer overlap */
     }
 
     img {
       width: 300px;
+      margin-bottom: 20px;
     }
 
-    h1 {
-      margin-top: 20px;
+    p {
+      max-width: 900px;
+      margin: 20px auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .subtext {
+      font-size: 16px;
+      color: #b8933c;
     }
 
     .footer {
@@ -50,14 +67,17 @@
 </head>
 <body>
 
-  <img src="panda.png">
-  
-  <p style="max-width: 600px; margin: 20px auto; font-size: 18px;">
-  PandaWorks Studios is where digital ideas become real. From visual art and 3D models to Bethesda game mods and engraving-ready designs, everything is created from scratch and built to survive both the game engine and the real world.
-  </p>
-  <p style="font-size: 16px; color: #b8933c;">
-  This site is currently under construction. Until the gallery goes live, check out current work on Facebook, YouTube, Instagram, and Imgur below.
-  </p>
+  <div class="content">
+    <img src="panda.png">
+    
+    <p>
+      PandaWorks Studios is where digital ideas become real. From visual art and 3D models to Bethesda game mods and engraving-ready designs, everything is created from scratch and built to survive both the game engine and the real world.
+    </p>
+
+    <p class="subtext">
+      This site is currently under construction. Until the gallery goes live, check out current work on Facebook, YouTube, Instagram, and Imgur below.
+    </p>
+  </div>
 
   <div class="footer">
     <table>
